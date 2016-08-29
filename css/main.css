@@ -1,0 +1,22 @@
+body{font-family: 'Open Sans', sans-serif; background: #ECEFF1}
+#menu{margin:10px 0;}
+#menu li{float: left; margin-right: 30px}
+#menu li a{color: #8e9aa6; text-decoration: none}
+#menu li a.current{color:#ff7978}
+#menu li a:hover{color:#ff7978}
+#contenedormenu{background: url(../images/line.png) repeat-x center bottom; height: 50px;}
+#logo{font-family: 'Merriweather', serif;}
+#logos{margin-top: 30px;}
+.tac{text-align:center;}
+#categorias{margin-top: 30px !important;    min-height: 1px;display: block;width: 497px;margin: 0 auto;}
+#categorias ul li{float: left;}
+#categorias ul li a{font-family: 'Philosopher', sans-serif; text-decoration: none; background: #ff7978; color: #fff; padding: 5px; margin: 1px;-webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px;}
+.parallax-window {min-height: 400px;background: transparent;position: relative;}
+#tituloslide{position: absolute;top: 50%;left: 50%;font-size: 50px;margin-left: -120px;margin-top: -50px;text-transform: uppercase;font-weight: bold;color: #fff}
+.telefono{color: #ff7978}
+.carrito{color: #ff7978}
+.nombre a{color: #262032; text-decoration: none; }
+.nombre a:hover{color: #ff7978}
+.producto img{margin:10px auto; display: block;}
+ .name:after {position: absolute;left: 50%;bottom: 0;width: 86px;height: 3px;margin-left: -43px;content: 'asdf';background: #ebebeb; }
+.teaser{margin-top: 30px; color: #7c8a97}

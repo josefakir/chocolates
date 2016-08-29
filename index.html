@@ -2,58 +2,67 @@
 <html lang="es">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
+	<title>Chocolates</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Philosopher" rel="stylesheet">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/template.css">
+	<link rel="stylesheet" href="css/main.css">
+	<script src="js/jquery-3.1.0.min.js"></script>
+	<script src="js/parallax.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$('.parallax-window').parallax({imageSrc: 'images/slide.jpg'});
+		})
+	</script>
 </head>
 <body>
-	<div class="container">
-		<!-- 1 / 11 -->
-		<div class="one column demo-back">1</div>
-		<div class="eleven column demo-back">11</div>
-		<!-- 2 / 10 -->
-		<div class="two column demo-back">2</div>
-		<div class="ten column demo-back">10</div>
-		<!-- 3 / 9 -->
-		<div class="three column demo-back">3</div>
-		<div class="nine column demo-back">9</div>
-		<!-- 4 / 8 -->
-		<div class="four column demo-back">4</div>
-		<div class="eight column demo-back">8</div>
-		<!-- 5 / 7 -->
-		<div class="five column demo-back">5</div>
-		<div class="seven column demo-back">7</div>
-		<!-- 6 / 6 -->
-		<div class="six column demo-back">6</div>
-		<div class="six column demo-back">6</div>
-		<!-- 7 / 5 -->
-		<div class="seven column demo-back">7</div>
-		<div class="five column demo-back">5</div>
-		<!-- 8 / 4 -->
-		<div class="eight column demo-back">8</div>
-		<div class="four column demo-back">4</div>
-		<!-- 9 / 3 -->
-		<div class="nine column demo-back">9</div>
-		<div class="three column demo-back">3</div>
-		<!-- 10 / 2 -->
-		<div class="ten column demo-back">10</div>
-		<div class="two column demo-back">2</div>
-		<!-- 11 / 1 -->
-		<div class="eleven column demo-back">11</div>
-		<div class="one column demo-back">1</div>
-		<!-- 12 -->
-		<div class="twelve column demo-back">12</div>
-	</div>
-	<div class="clear"></div>
-	<div class="container">
-		<div class="twelve column">
-			<h2>Thirds:</h2>
+	<div id="wrap">
+		<div class="container" id="contenedormenu">
+			<div class="twelve column">
+				<ul id="menu">
+					<li><a href="" class="current">Inicio</a></li>
+					<li><a href="">Mi cuenta</a></li>
+					<li><a href="">Ir al carrito</a></li>
+				</ul>
+			</div>
+			<div class="clear"></div>
 		</div>
-		<div class="one-third column demo-back">
-			1/3
+		<div class="container" id="logos">
+			<div class="one-third column tac"><i class="fa fa-phone telefono" aria-hidden="true"></i> 5593 - 5490</div>
+			<div class="one-third column tac"><div id="logo">enviachocolates.com</div></div>
+			<div class="one-third column tac"><i class="fa fa-shopping-cart carrito" aria-hidden="true"></i> (0) Tu carrito está vacío</div>
+			<div class="clear"></div>
 		</div>
-		<div class="two-third column demo-back">
-			2/3
+		<div class="container" id="categorias">
+			<ul>
+				<li><a href="">Envueltos</a></li>
+				<li><a href="">Desenvueltos</a></li>
+				<li><a href="">Por pieza</a></li>
+				<li><a href="">Especiales</a></li>
+				<li><a href="">Confitados</a></li>
+				<li><a href="">Gomitas</a></li>
+			</ul>
+		</div>
+		<div class="clear"></div>
+		<div class="parallax-window" data-parallax="scroll">
+			<h2 class="tac" id="tituloslide">Una dulce <br>idea</h2>
+		</div>
+		<div class="clear"></div>
+		<div class="container" id="productos">
+			<div class="producto one-third column">
+				<img src="images/dummy.png" alt="">
+				<div class="nombre tac">
+					<a href="">Dipped Swizzled Strawberries</a>
+				</div>
+				<div class="teaser tac">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent faucibus.
+				</div>
+			</div>
+			<div class="producto one-third column"></div>
+			<div class="producto one-third column"></div>
 		</div>
 	</div>
 </body>
