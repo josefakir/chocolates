@@ -1,0 +1,44 @@
+body{font-family: 'Open Sans', sans-serif; background: #fff}
+#menu{margin:10px 0;}
+#menu li{float: left; margin-right: 30px}
+#menu li a{color: #8e9aa6; text-decoration: none}
+#menu li a.current{color:#ff7978}
+#menu li a:hover{color:#ff7978}
+#contenedormenu{background: url(../images/line.png) repeat-x center bottom; height: 50px;}
+#logo{font-family: 'Merriweather', serif;}
+#logos{margin-top: 30px;}
+.tac{text-align:center;}
+.white{background: #fff;}
+#legales{color: #7c8a97; font-size: 12px; margin-top: 20px;background: url(../images/line.png) repeat-x center top; padding-top: 20px; padding-bottom: 20px}
+.error{color: #ff7978; text-align:center; font-size: 12px }
+input[type=text]{height: 30px}
+input[type=password]{height: 30px; margin-top: 10px}
+input[type=submit]{background: #ff7978; color: #fff; border: none; display: block;width: 200px; margin:10px auto; padding: 10px 0}
+thead{background: #ff7978;color: #fff;}
+th{padding: 5px; text-align: left;}
+td{padding: 5px}
+.botonaccion{width: 20px}
+tr:nth-child(even){background: #999;; color: #fff;} 
+tr:nth-child(even) td a{color: #fff;}
+tr:nth-child(odd) td a{color: #ff7978;}
+.formularios p{margin-bottom:10px }
+#paginador{margin-top: 20px}
+#paginador li {float: left;margin: 10px 5px;}
+#paginador li a{background: #999;color: #fff;text-decoration: none;padding: 5px 10px}
+#paginador li a.current{background: #ff7978}
+#paginador li a:hover{background: #ff7978}
+/* MEDIAQUERIES */
+@media only screen and (min-width: 961px) and (max-width: 1200px) {
+}
+@media only screen and (min-width: 769px) and (max-width: 960px) {
+}
+@media only screen and (min-width: 421px) and (max-width: 768px) {
+}
+@media only screen and (min-width: 321px) and (max-width: 420px) {
+}
+@media only screen and (max-width: 320px) {
+}
+
+
+
+
