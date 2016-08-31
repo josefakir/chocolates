@@ -1,51 +1,11 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-	<meta charset="UTF-8">
-	<title>Chocolates</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Philosopher" rel="stylesheet">
-	<link rel="stylesheet" href="css/font-awesome.min.css">
-	<link rel="stylesheet" href="css/template.css">
-	<link rel="stylesheet" href="css/main.css">
-	<script src="js/jquery-3.1.0.min.js"></script>
-	<script src="js/parallax.min.js"></script>
-	<script src="js/script.js"></script>
+	<?php include("head.php"); ?>
 </head>
 <body>
 	<div id="wrap">
-		<div class="w100 white">
-		<div class="container" id="contenedormenu">
-			<div class="twelve column">
-				<ul id="menu">
-					<li><a href="" class="current">Inicio</a></li>
-					<li><a href="">Mi cuenta</a></li>
-					<li><a href="">Ir al carrito</a></li>
-				</ul>
-				<a href="" id="triggermenu"><i class="fa fa-bars" aria-hidden="true"></i></a>
-			</div>
-			<div class="clear"></div>
-		</div>
-		<div class="container" id="logos">
-			<div class="one-third column tac"><i class="fa fa-phone telefono" aria-hidden="true"></i> 5593 - 5490</div>
-			<div class="one-third column tac"><div id="logo">enviachocolates.com</div></div>
-			<div class="one-third column tac"><i class="fa fa-shopping-cart carrito" aria-hidden="true"></i> (<span id="cantidadcarrito">0</span>) Tu carrito está vacío</div>
-			<div class="clear"></div>
-		</div>
-		<div class="container" id="categorias">
-			<ul id="menucategorias">
-				<li><a href="">Envueltos</a></li>
-				<li><a href="">Desenvueltos</a></li>
-				<li><a href="">Por pieza</a></li>
-				<li><a href="">Especiales</a></li>
-				<li><a href="">Confitados</a></li>
-				<li><a href="">Gomitas</a></li>
-			</ul>
-		</div>
-		<div class="clear"></div>
-		</div>
+		<?php include("menu.php") ?>
 		<div class="white">
 			<p>&nbsp;</p>
 			<div class="container" id="singleproductos">
@@ -129,36 +89,7 @@
 				<p>&nbsp;</p>
 			</div>
 		</div>
-		<footer>
-			<div class="container">
-				<div class="one-third column">
-					<h5>INFORMACIÓN</h5>
-					<ul>
-						<li><a href="">Nosotros</a></li>
-						<li><a href="">Información de envío</a></li>
-						<li><a href="">Términos y condiciones</a></li>
-					</ul>
-				</div>
-				<div class="one-third column">
-					<h5>MI CUENTA</h5>
-					<ul>
-						<li><a href="">Mi cuenta</a></li>
-						<li><a href="">Historial de pedidos</a></li>
-					</ul>
-				</div>
-				<div class="one-third column">
-					<h5>SÍGUENOS</h5>
-					<ul>
-						<li><a href="">Facebook</a></li>
-						<li><a href="">Instagram</a></li>
-					</ul>
-				</div>
-			</div>
-			<div class="clear"></div>
-			<div id="legales">
-				<p class="tac"> &copy; Derechos reservados enviachocolates.com 2016</p>
-			</div>
-		</footer>
+		<?php include("footer.php") ?>
 	</div>
 </body>
 </html>

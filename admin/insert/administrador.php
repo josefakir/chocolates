@@ -1,6 +1,5 @@
 <?php 
 	include("../auth.php");
-	include("../config.php");
 	
 	$correo = $_POST['correo'];
 	$contrasena = md5($_POST['contrasena']);

@@ -1,6 +1,5 @@
 <?php 
 	include("../auth.php");
-	include("../config.php");
 	
 	$nombre = $_POST['nombre'];
 	$slug = $_POST['slug'];

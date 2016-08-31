@@ -22,8 +22,32 @@ $(document).ready(function(){
 	});
 	$('#nombrecategoria').blur(function(){
 		var slug = $(this).val();
-		slug = slug.replace(" ","-").toLowerCase();
+		slug = slug.replace(/ /g,"-").toLowerCase();
 		$('#slugcategoria').val(slug);
-	})
+	});
+	$('#forminsertarproducto').validate({
+		rules : {
+			categoria : 'required',
+			nombre : 'required',
+			slug : 'required',
+			precio : 'required',
+			foto : {
+				required : true,
+				extension: "jpg"
+			}
+		}
+	});
+	$('#formeditarproducto').validate({
+		rules : {
+			categoria : 'required',
+			nombre : 'required',
+			slug : 'required',
+			precio : 'required',
+			foto : {
+				extension: "jpg"
+			}
+		}
+	});
+	
 	
 })
