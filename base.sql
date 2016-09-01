@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Servidor: localhost:3306
--- Tiempo de generación: 31-08-2016 a las 23:43:40
+-- Tiempo de generación: 01-09-2016 a las 18:32:55
 -- Versión del servidor: 5.5.42
 -- Versión de PHP: 5.6.10
 
@@ -83,7 +83,7 @@ CREATE TABLE `productos` (
 INSERT INTO `productos` (`id`, `id_categoria`, `nombre`, `slug`, `descripcion`, `precio`, `imagen`, `activo`) VALUES
 (16, 6, 'Ejemplo de producto 1', 'ejemplo-de-producto-1', '<p>Deliciosa caja de chocolates.</p>', 250, 'http://localhost/chocolates/productos/2016-08-31-22-56-05_ejemplo-de-producto-1_producto.jpg', 1),
 (17, 6, 'Ejemplo de producto 2', 'ejemplo-de-producto-2', '<p>Deliciosa caja de chocolates.</p>', 300.5, 'http://localhost/chocolates/productos/2016-08-31-22-56-39_ejemplo-de-producto-2_producto.jpg', 1),
-(18, 7, 'Ejemplo de producto 3', 'ejemplo-de-producto-3', '<p>Deliciosa caja de chocolates.</p>', 200, 'http://localhost/chocolates/productos/2016-08-31-22-57-01_ejemplo-de-producto-3_producto.jpg', 1);
+(18, 6, 'Ejemplo de producto 3', 'ejemplo-de-producto-3', '<p>Deliciosa caja de chocolates.</p>', 200, 'http://localhost/chocolates/productos/2016-08-31-22-57-01_ejemplo-de-producto-3_producto.jpg', 1);
 
 --
 -- Índices para tablas volcadas
