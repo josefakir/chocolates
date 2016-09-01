@@ -1,9 +1,9 @@
 <div class="container" id="contenedormenu">
 			<div class="twelve column">
 				<ul id="menu">
-					<li><a href="" class="current">Inicio</a></li>
-					<li><a href="">Mi cuenta</a></li>
-					<li><a href="">Ir al carrito</a></li>
+					<li><a href="index.php" class="current">Inicio</a></li>
+					<li><a href="mi-cuenta.php">Mi cuenta</a></li>
+					<li><a href="carrito.php">Ir al carrito</a></li>
 				</ul>
 				<a href="" id="triggermenu"><i class="fa fa-bars" aria-hidden="true"></i></a>
 			</div>
@@ -17,12 +17,19 @@
 		</div>
 		<div class="container" id="categorias">
 			<ul id="menucategorias">
-				<li><a href="">Envueltos</a></li>
-				<li><a href="">Desenvueltos</a></li>
-				<li><a href="">Por pieza</a></li>
-				<li><a href="">Especiales</a></li>
-				<li><a href="">Confitados</a></li>
-				<li><a href="">Gomitas</a></li>
+				<?php 
+				$conn = new PDO("mysql:host=".DB_HOST.";dbname=".DB_DATABASE,DB_USER,DB_PASS);
+				$sql = "SELECT * FROM categorias";
+				$q = $conn->prepare($sql);
+				$q->execute();
+				$q->setFetchMode(PDO::FETCH_BOTH);
+				$resultado2 = $q->fetchAll();
+				foreach($resultado2 as $r2){
+					?>
+				<li><a href="categoria.php?id=<?php echo $r2['id'] ?>"><?php echo $r2['nombre'] ?></a></li>
+					<?php
+				}
+				?>
 			</ul>
 		</div>
 		<div class="clear"></div>

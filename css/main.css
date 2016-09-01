@@ -8,7 +8,7 @@ body{font-family: 'Open Sans', sans-serif; background: #ECEFF1}
 #logo{font-family: 'Merriweather', serif;}
 #logos{margin-top: 30px;}
 .tac{text-align:center;}
-#menucategorias{margin-top: 30px !important;display: block;width: 497px;margin: 0 auto; position: relative;}
+#menucategorias{margin-top: 30px !important;display: block;width: 820px;margin: 0 auto; position: relative;}
 #menucategorias li{float: left;}
 #menucategorias li a{font-family: 'Philosopher', sans-serif; text-decoration: none; background: #ff7978; color: #fff; padding: 5px; margin: 1px;-webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px;}
 .parallax-window {min-height: 400px;background: transparent;position: relative;}

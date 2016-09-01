@@ -1,4 +1,5 @@
-<?php include("config.php"); ?>
+<?php include("config.php");
+$id_categoria = $_GET['id'] ?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -21,9 +22,9 @@
 						}
 						$offset = ($pagina - 1)*$cuantos;
 						$conn = new PDO("mysql:host=".DB_HOST.";dbname=".DB_DATABASE,DB_USER,DB_PASS);
-						$sql = "SELECT * FROM productos  WHERE activo = '1' order by RAND() LIMIT $offset,$cuantos";
+						$sql = "SELECT * FROM productos  WHERE activo = '1' AND id_categoria = :id_categoria LIMIT $offset,$cuantos";
 						$q = $conn->prepare($sql);
-						$q->execute();
+						$q->execute(array(':id_categoria' => $id_categoria));
 						$q->setFetchMode(PDO::FETCH_BOTH);
 						$resultado = $q->fetchAll();
 						$total = "SELECT id,nombre,slug,precio,imagen FROM productos WHERE activo = '1' ";
@@ -33,6 +34,7 @@
 						$total =  $q->fetchAll();
 						$total = count($total);
 						$total = ceil($total/$cuantos);
+						if(!empty($resultado)){
 						foreach($resultado as $r){
 							?>
 			<div class="producto one-third column">
@@ -49,6 +51,9 @@
 			</div>
 							<?php
 						}
+					}else{
+						echo "<p style='margin: 40px 0; tex-align:center'>Lo sentimos, no encontramos productos en esta categoría</p>";
+					}
 			?>
 			
 		</div>
